@@ -285,6 +285,21 @@
   .cta-strip .share-btns{justify-content:center}
   .cta-strip .sb-copy{background:rgba(255,255,255,.18)}
 
+  /* people / leadership */
+  .people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+  @media(max-width:900px){.people-grid{grid-template-columns:1fr}}
+  .person-card{background:#fff;border:1px solid var(--grey-mid);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+  .person-card img{width:100%;height:auto;border:1px solid var(--grey-mid);border-radius:10px;margin-bottom:16px;background:#fff;display:block}
+  .person-card h3{font-size:1.25rem}
+  .person-card .role{font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--orange);font-weight:600;margin:4px 0 10px;display:block}
+  .person-card p{font-size:.9rem;color:var(--ink-soft)}
+  .quoteblock{background:#fff;border:1px solid var(--grey-mid);border-left:5px solid var(--orange);border-radius:12px;padding:34px 38px;box-shadow:var(--shadow);margin-top:54px}
+  .quoteblock blockquote{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.15rem,2.4vw,1.45rem);color:var(--blue);line-height:1.45}
+  .quoteblock .attr{margin-top:14px;font-size:.86rem;color:var(--ink-soft)}
+  .bigq{margin-top:48px;background:var(--blue);color:#fff;border-radius:16px;padding:42px 38px;text-align:center;position:relative;overflow:hidden}
+  .bigq::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(42,161,152,.45),transparent 70%)}
+  .bigq h3{color:#fff;font-size:clamp(1.25rem,3vw,1.75rem);max-width:30ch;margin:0 auto;position:relative}
+
   /* footer */
   footer{background:var(--blue-deep);color:#9fb0c8;padding:54px 0 30px}
   .foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1)}
@@ -320,6 +335,7 @@
     <nav class="menu" id="menu">
       <a href="#storm">The Imperfect Storm</a>
       <a href="#structure">Accountability</a>
+      <a href="#people">The People</a>
       <a href="#storm" class="nav-cta">Understand the Risks</a>
     </nav>
   </div>
@@ -514,6 +530,62 @@
   </div>
 </section>
 
+<!-- ===================== THE PEOPLE BEHIND THE DEVELOPMENT ===================== -->
+<section class="section" id="people">
+  <div class="wrap reveal">
+    <span class="label">Leadership &amp; Accountability</span>
+    <h2>The People Behind the Development</h2>
+    <p class="intro">The three individuals who control Heyford Park — Ian Amdur, Gary Silver, and Paul Silver — collectively hold an unusually high number of directorships across the Dorchester/Heyford corporate network: nearly 60 active company directorships between just three people, all connected to the same development ecosystem.</p>
+
+    <div class="people-grid">
+      <div class="person-card reveal">
+        <img src="amdur.jpg" alt="Companies House public record for Ian Michael Amdur showing 27 current appointments">
+        <h3>Ian Amdur</h3>
+        <span class="role">27 current directorships</span>
+        <p>Source: Companies House public register, filtered to current appointments.</p>
+      </div>
+      <div class="person-card reveal">
+        <img src="gary%20silver.jpg" alt="Companies House public record for Gary Alexander Silver showing 20 current appointments">
+        <h3>Gary Silver</h3>
+        <span class="role">20 current directorships</span>
+        <p>Source: Companies House public register, filtered to current appointments.</p>
+      </div>
+      <div class="person-card reveal">
+        <img src="paul%20silver.jpg" alt="Companies House public record for Paul Anthony Silver showing 12 current appointments">
+        <h3>Paul Silver</h3>
+        <span class="role">12 current directorships</span>
+        <p>Source: Companies House public register, filtered to current appointments. Chief executive of Dorchester Living.</p>
+      </div>
+    </div>
+
+    <div class="storm-card wide reveal" style="margin-top:26px">
+      <span class="tag">THE PATTERN</span>
+      <h3>Corporately Complex, Publicly Unclear</h3>
+      <p style="color:var(--ink-soft);margin-bottom:16px">Many of these companies share similar names, operate from the same registered address, and relate to different parcels of land, phases of development, or financing structures within the former RAF Upper Heyford site. Large regeneration projects often involve multiple companies — but the density of directorships concentrated in so few hands at Heyford Park is far beyond what most residents would expect from a local housing development. It raises reasonable questions about:</p>
+      <ul>
+        <li>Why so many separate entities are needed.</li>
+        <li>How responsibilities are divided between them.</li>
+        <li>Who is ultimately accountable when problems arise.</li>
+        <li>Why the structure is so complex for a single geographic site.</li>
+      </ul>
+      <p style="color:var(--ink-soft);margin-top:16px">When combined with the numerous outstanding bank charges across these companies and the lack of transparency around the original sale from the North Oxfordshire Consortium, the volume of directorships contributes to a wider picture of a development that is corporately complex but publicly unclear.</p>
+    </div>
+
+    <div class="quoteblock reveal">
+      <blockquote>“…assailed by every protestor under the sun, and local people, [with] ‘not on my doorstep’ scenarios.”</blockquote>
+      <p class="attr">— Paul Silver, chief executive of Dorchester Living, speaking about Heyford Park in a published press interview, December 2025.</p>
+    </div>
+
+    <p class="intro reveal" style="margin-top:28px">This comment, made while discussing the Heyford Park development, has raised concerns among residents about the company's attitude toward community feedback. At a time when local people are reporting serious issues — pollution, HGV traffic, sewage releases, and environmental contamination — the tone of this statement has been seen by many as dismissive of legitimate worries. Residents are increasingly asking whether their concerns are being heard, or simply categorised as "protestors" to be brushed aside.</p>
+
+    <div class="bigq reveal">
+      <h3>Is the leadership culture at Heyford Park aligned with the long-term wellbeing of the community living here?</h3>
+    </div>
+
+    <p class="placeholder-note">Directorship figures are taken from public Companies House records (current appointments). The quotation above is from a published press interview and is reproduced for the purpose of comment and review. This page asks questions about transparency and accountability; it does not allege wrongdoing by any individual or company.</p>
+  </div>
+</section>
+
 <!-- ===================== FOOTER ===================== -->
 <footer>
   <div class="wrap">
@@ -534,6 +606,7 @@
         <h4>Explore</h4>
         <a href="#storm">The Imperfect Storm</a>
         <a href="#structure">Corporate Structure &amp; Accountability</a>
+        <a href="#people">The People Behind the Development</a>
         <a href="#storm">How It All Connects</a>
         <a href="#home">Back to Top</a>
       </div>
