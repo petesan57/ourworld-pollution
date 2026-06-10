@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OurWorld Pollution — The Perfect Storm</title>
-<meta name="description" content="A calm, factual, community-led campaign for independent testing, transparency, and protection in the Ardley–Upper Heyford–Bicester area. Incinerator, PFAS, sludge and housing risks — assessed together for the first time.">
+<title>OurWorld Pollution — The Imperfect Storm</title>
+<meta name="description" content="A calm, factual, community-led campaign for independent testing, transparency, and protection in the Ardley–Upper Heyford–Bicester area. Incinerator, PFAS, sludge, HGV traffic and housing risks — assessed together for the first time.">
 
 <!-- Social sharing preview -->
-<meta property="og:title" content="OurWorld Pollution — The Perfect Storm in Our Area">
-<meta property="og:description" content="Incinerator, PFAS, sludge and contaminated-land housing — four serious risks that have never been assessed together. We're asking for independent testing, transparency, and protection for local families.">
+<meta property="og:title" content="OurWorld Pollution — The Imperfect Storm in Our Area">
+<meta property="og:description" content="Incinerator, PFAS, sludge, daily HGV traffic and contaminated-land housing — five serious risks that have never been assessed together. We're asking for independent testing, transparency, and protection for local families.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -127,7 +127,7 @@
   .btn-outline:hover{border-color:var(--teal);color:var(--teal);text-decoration:none}
 
   /* key facts */
-  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:54px}
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:54px}
   .fact{
     background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
     border-radius:var(--radius);padding:24px 22px;backdrop-filter:blur(4px);
@@ -135,7 +135,8 @@
   .fact .num{font-family:'IBM Plex Mono',monospace;font-size:1.7rem;font-weight:600;color:#fff;display:flex;align-items:baseline;gap:6px}
   .fact .num .ic{font-size:1.3rem}
   .fact p{color:#c3d2e6;font-size:.92rem;margin-top:6px;line-height:1.45}
-  @media(max-width:760px){.facts{grid-template-columns:1fr}}
+  @media(max-width:940px){.facts{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.facts{grid-template-columns:1fr}}
 
   /* ---------- SHARE BAR ---------- */
   .sharebar{
@@ -177,12 +178,21 @@
   .storm-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--teal)}
   .storm-card::before{content:"";position:absolute;top:0;left:0;width:100%;height:4px;background:var(--teal)}
   .storm-card.warn::before{background:var(--orange)}
+  .storm-card.wide{grid-column:1/-1}
   .storm-card .tag{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--ink-soft);letter-spacing:.1em}
   .storm-card h3{font-size:1.5rem;margin:8px 0 16px}
   .storm-card ul{list-style:none}
   .storm-card li{padding-left:24px;position:relative;margin-bottom:10px;color:var(--ink-soft);font-size:.97rem}
   .storm-card li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:8px;border-radius:50%;background:var(--teal)}
   .storm-card.warn li::before{background:var(--orange)}
+  .emit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+  @media(max-width:680px){.emit-grid{grid-template-columns:1fr}}
+  .emit{
+    background:var(--orange-soft);border:1px solid #f3ddc4;border-radius:10px;
+    padding:16px 18px;text-align:center;
+  }
+  .emit .ev{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:1.15rem;color:var(--blue)}
+  .emit .el{font-size:.8rem;color:var(--ink-soft);margin-top:4px;line-height:1.4}
 
   /* connection diagram */
   .flow{margin-top:64px;text-align:center}
@@ -308,7 +318,8 @@
       <span></span><span></span><span></span>
     </button>
     <nav class="menu" id="menu">
-      <a href="#storm">The Perfect Storm</a>
+      <a href="#storm">The Imperfect Storm</a>
+      <a href="#structure">Accountability</a>
       <a href="#storm" class="nav-cta">Understand the Risks</a>
     </nav>
   </div>
@@ -317,10 +328,10 @@
 <!-- ===================== HERO ===================== -->
 <section class="hero" id="home">
   <div class="wrap">
-    <span class="eyebrow">Ardley · Upper Heyford · Bicester &nbsp;—&nbsp; <b>The Perfect Storm</b></span>
-    <h1>The Perfect Storm in <em>Our Area</em></h1>
+    <span class="eyebrow">Ardley · Upper Heyford · Bicester &nbsp;—&nbsp; <b>The Imperfect Storm</b></span>
+    <h1>The Imperfect Storm in <em>Our Area</em></h1>
     <p class="sub">A calm, factual, community-led campaign for independent testing, transparency, and protection for local families.</p>
-    <p class="lede">Our area faces a combination of environmental and planning risks that have never been assessed together. Each issue alone is serious — but together they form a Perfect Storm. Our goal is simple: independent testing, openness, and protection for the people who live here.</p>
+    <p class="lede">Our area faces a combination of environmental and planning risks that have never been assessed together. Each issue alone is serious — but together they form an Imperfect Storm. Our goal is simple: independent testing, openness, and protection for the people who live here.</p>
     <div class="hero-btns">
       <a href="#storm" class="btn btn-primary">Understand the Risks</a>
     </div>
@@ -338,16 +349,20 @@
         <div class="num"><span class="ic">🌾</span>Months</div>
         <p>Sludge and slurry stored for long periods on farmland close to homes.</p>
       </div>
+      <div class="fact">
+        <div class="num"><span class="ic">🚛</span>300–400</div>
+        <p>HGVs every day on Camp Road, through the middle of Heyford Park.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== THE PERFECT STORM ===================== -->
+<!-- ===================== THE IMPERFECT STORM ===================== -->
 <section class="section" id="storm">
   <div class="wrap reveal">
     <span class="label">What's Happening in Our Area</span>
-    <h2>Four serious issues, never assessed together</h2>
-    <p class="intro">The Ardley incinerator, PFAS contamination, sludge and slurry storage, and housing built on or near contaminated land all intersect in our community. No authority has ever looked at these risks as a whole. Here is each part of the storm.</p>
+    <h2>Five serious issues, never assessed together</h2>
+    <p class="intro">The Ardley incinerator, PFAS contamination, sludge and slurry storage, daily HGV traffic through Heyford Park, and housing built on or near contaminated land all intersect in our community. No authority has ever looked at these risks as a whole. Here is each part of the storm.</p>
 
     <div class="storm-grid">
       <div class="storm-card reveal">
@@ -391,6 +406,32 @@
           <li>No cumulative modelling for the families now living here.</li>
         </ul>
       </div>
+
+      <div class="storm-card warn wide reveal">
+        <span class="tag">05 — TRAFFIC &amp; AIR</span>
+        <h3>HGVs Through Heyford Park</h3>
+        <p style="color:var(--ink-soft);margin-bottom:16px">Heyford Park experiences <strong>300–400 heavy goods vehicles every single day</strong> using Camp Road as the main access route through the middle of the estate — the same road lined with homes, the school, playgrounds and shops. These lorries release significant daily pollution directly inside the residential area:</p>
+        <div class="emit-grid">
+          <div class="emit">
+            <div class="ev">540–720 kg</div>
+            <div class="el">of CO₂ every day</div>
+          </div>
+          <div class="emit">
+            <div class="ev">2.4–3.2 kg</div>
+            <div class="el">of NOₓ every day — linked to asthma, heart and lung disease</div>
+          </div>
+          <div class="emit">
+            <div class="ev">30–40 g</div>
+            <div class="el">of PM₂.₅ every day — fine particles that penetrate deep into the lungs</div>
+          </div>
+        </div>
+        <ul>
+          <li>This level of pollution is normally associated with major roads — not a so-called "family-friendly" housing development.</li>
+          <li>Children walking to school, families opening windows, and residents using gardens are exposed to continuous, cumulative emissions.</li>
+          <li>The estate has been designed around an HGV corridor, with no bypass and no separation between industrial traffic and residential life.</li>
+          <li>The result is a high-pollution environment being built and marketed as a healthy community.</li>
+        </ul>
+      </div>
     </div>
 
     <!-- HOW IT CONNECTS -->
@@ -399,6 +440,8 @@
       <p>These are not separate problems. They flow into one another — and ultimately, towards the places people live, learn, and play.</p>
       <div class="flow-chain">
         <div class="flow-node f-orange"><div class="fic">🔥</div><div><div class="fname">Incinerator Emissions</div><div class="fdesc">Airborne particulates settle on land and water</div></div></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node f-orange"><div class="fic">🚛</div><div><div class="fname">Daily HGV Emissions on Camp Road</div><div class="fdesc">NOₓ and fine particles released inside the estate itself</div></div></div>
         <div class="flow-arrow"></div>
         <div class="flow-node f-orange"><div class="fic">🌾</div><div><div class="fname">Sludge &amp; Slurry Runoff</div><div class="fdesc">Stored waste leaches into ditches and soil</div></div></div>
         <div class="flow-arrow"></div>
@@ -409,6 +452,65 @@
         <div class="flow-node f-final"><div class="fic">🏘️</div><div><div class="fname">Homes, Schools &amp; Play Areas</div><div class="fdesc">Where local families spend their daily lives</div></div></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===================== CORPORATE STRUCTURE & ACCOUNTABILITY ===================== -->
+<section class="section alt" id="structure">
+  <div class="wrap reveal">
+    <span class="label">Who Controls the Land</span>
+    <h2>Corporate Structure &amp; Accountability at Heyford Park</h2>
+    <p class="intro">Heyford Park is controlled by a small group of private individuals through a network of interlinked companies, many of which share almost identical names. Each company typically owns a different slice of land or phase of development — a structure that is difficult for residents to understand and even harder to scrutinise.</p>
+
+    <div class="flow reveal" style="margin-top:54px">
+      <h3>How the Site Changed Hands</h3>
+      <p>From the UK's largest national housebuilders to a network of interlinked private companies.</p>
+      <div class="flow-chain">
+        <div class="flow-node"><div class="fic">🏗️</div><div><div class="fname">North Oxfordshire Consortium</div><div class="fdesc">A partnership of some of the UK's largest national housebuilders — the original owner of the entire Upper Heyford site</div></div></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node f-orange"><div class="fic">🤝</div><div><div class="fname">Sold to the Dorchester Group</div><div class="fdesc">A much smaller developer — no clear public explanation has ever been given for the sale</div></div></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node f-orange"><div class="fic">🕸️</div><div><div class="fname">Network of Interlinked Companies</div><div class="fdesc">Dozens of Heyford-related boards, many with near-identical names</div></div></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node f-final"><div class="fic">🗺️</div><div><div class="fname">Land Held in Slices</div><div class="fdesc">Each company typically owns a different parcel or phase of the development</div></div></div>
+      </div>
+    </div>
+
+    <div class="storm-grid">
+      <div class="storm-card warn reveal">
+        <span class="tag">DIRECTORS &amp; BOARDS</span>
+        <h3>A Small Group, Dozens of Companies</h3>
+        <ul>
+          <li>The core directors and shareholders are Ian Amdur, Gary Silver, and Paul Silver.</li>
+          <li>They sit on dozens of Heyford-related company boards.</li>
+          <li>Many of the companies share almost identical names, making them difficult for residents to tell apart and scrutinise.</li>
+        </ul>
+      </div>
+
+      <div class="storm-card warn reveal">
+        <span class="tag">FINANCE</span>
+        <h3>Outstanding Bank Charges</h3>
+        <ul>
+          <li>Numerous outstanding bank charges are registered against these companies at Companies House.</li>
+          <li>The charges show different parts of the former airbase have been repeatedly used as security for loans and refinancing arrangements over many years.</li>
+          <li>This is a common model in large-scale development — but the sheer number of entities and charges raises questions about transparency, financial risk, and long-term accountability.</li>
+        </ul>
+      </div>
+
+      <div class="storm-card wide reveal">
+        <span class="tag">THE ORIGINAL SALE</span>
+        <h3>An Unresolved Question</h3>
+        <ul>
+          <li>The land was first owned by the North Oxfordshire Consortium, a partnership of some of the UK's largest national housebuilders.</li>
+          <li>Instead of developing the site themselves, they sold it to the much smaller Dorchester Group.</li>
+          <li>No clear public explanation has ever been given for why major national developers stepped away from such a large and potentially profitable site.</li>
+          <li>It is also unclear what due diligence was carried out before the sale.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="intro reveal" style="margin-top:44px">Taken together — the complex company structure, the multiple charges, and the lack of clarity around the original sale — residents are left with important unanswered questions about who holds responsibility for the land, the financing, and the long-term environmental and community impacts of development at Heyford Park.</p>
+    <p class="placeholder-note">Company, directorship and charge information is drawn from public records held at Companies House. This page asks questions about transparency and accountability; it does not allege wrongdoing by any individual or company.</p>
   </div>
 </section>
 
@@ -426,17 +528,19 @@
         <a href="#storm">PFAS in Gallos Brook</a>
         <a href="#storm">Sludge &amp; Slurry</a>
         <a href="#storm">Housing &amp; Contamination</a>
+        <a href="#storm">HGVs Through Heyford Park</a>
       </div>
       <div>
         <h4>Explore</h4>
-        <a href="#storm">The Perfect Storm</a>
+        <a href="#storm">The Imperfect Storm</a>
+        <a href="#structure">Corporate Structure &amp; Accountability</a>
         <a href="#storm">How It All Connects</a>
         <a href="#home">Back to Top</a>
       </div>
     </div>
     <div class="foot-bottom">
       <span>© <span id="yr"></span> OurWorld Pollution · Independent &amp; non-partisan.</span>
-      <span>#ThePerfectStorm · #OurWorldPollution</span>
+      <span>#TheImperfectStorm · #OurWorldPollution</span>
     </div>
   </div>
 </footer>
